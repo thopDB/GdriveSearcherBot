@@ -54,12 +54,12 @@ async def gsearch(_, message: Message):
             text += f"""
 📄  [{data[count]['name']}
 **Size:** __{data[count]['size']}__
-**[Drive Link]({data[count]['drive_url']})** | **[Index Link]({data[count]['url']})**\n"""
+**[Drive Link]({data[count]['https://dw.thopdb.com/?id=drive_url']})** | **[Index Link]({data[count]['https://dw.thopdb.com/?id=url']})**\n"""
 
         else:
             text += f"""
 📂  __{data[count]['name']}__
-**[Drive Link]({data[count]['drive_url']})** | **[Index Link]({data[count]['url']})**\n"""
+**[Drive Link]({data[count]['https://dw.thopdb.com/?id=drive_url']})** | **[Index Link]({data[count]['https://dw.thopdb.com/?id=url']})**\n"""
     if len(data) > RESULTS_COUNT:
         keyboard = InlineKeyboardMarkup(
             [
@@ -109,12 +109,12 @@ async def previous_callbacc(_, CallbackQuery: cbq):
                 text += f"""
 📄  [{data[count]['name']}
 **Size:** __{data[count]['size']}__
-**[Drive Link]({data[count]['drive_url']})** | **[Index Link]({data[count]['url']})**\n"""
+**[Drive Link]({data[count]['https://dw.thopdb.com/?id=drive_url']})** | **[Index Link]({data[count]['https://dw.thopdb.com/?id=url']})**\n"""
 
             else:
                 text += f"""
 📂  __{data[count]['name']}__
-**[Drive Link]({data[count]['drive_url']})** | **[Index Link]({data[count]['url']})**\n"""
+**[Drive Link]({data[count]['https://dw.thopdb.com/?id=drive_url']})** | **[Index Link]({data[count]['https://dw.thopdb.com/?id=url']})**\n"""
         except IndexError:
             continue
 
@@ -157,12 +157,12 @@ async def next_callbacc(_, cb: cbq):
                 text += f"""
 📄  [{data[count]['name']}
 **Size:** __{data[count]['size']}__
-**[Drive Link]({data[count]['drive_url']})** | **[Index Link]({data[count]['url']})**\n"""
+**[Drive Link]({data[count]['https://dw.thopdb.com/?id=drive_url']})** | **[Index Link]({data[count]['https://dw.thopdb.com/?id=url']})**\n"""
 
             else:
                 text += f"""
 📂  __{data[count]['name']}__
-**[Drive Link]({data[count]['drive_url']})** | **[Index Link]({data[count]['url']})**\n"""
+**[Drive Link]({data[count]['https://dw.thopdb.com/?id=drive_url']})** | **[Index Link]({data[count]['https://dw.thopdb.com/?id=url']})**\n"""
         except IndexError:
             continue
 

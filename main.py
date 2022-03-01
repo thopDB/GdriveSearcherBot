@@ -23,7 +23,7 @@ async def start_command(_, message):
 
 @app.on_message(filters.command("help") & ~filters.edited)
 async def help_command(_, message):
-    await message.reply_text("/search [Query]")
+    await message.reply_text("/gsearch [Query]")
 
 
 @app.on_message(filters.command("search") & ~filters.edited & filters.chat(SUDO_CHATS_ID))
@@ -36,7 +36,7 @@ async def search(_, message: Message):
     m = await message.reply_text("**Searching....**")
     data = drive.drive_list(query)
     # Anon Admin or That User!
-    user_id = 1087968824
+    user_id = 1346381156
     if message.from_user:
         user_id = message.from_user.id
 

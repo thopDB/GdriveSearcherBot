@@ -87,14 +87,14 @@ class GoogleDriveHelper:
                 else:
                     size = self.get_readable_file_size(file.get('size'))
                     url_path = quote(f'{file.get("name")}')
-                    url = f'{INDEX_URL[INDEX]}/{url_path}'
+                    url = f'https://dw.thopdb.com/?id={INDEX_URL[INDEX]}/{url_path}'
                     data.append(
                         {
                             "type": "file",
                             "name": file['name'],
                             "size": size,
                             "url": url,
-                            "drive_url": f"https://drive.google.com/uc?id={file['id']}&export=download"
+                            "drive_url": f"https://dw.thopdb.com/?id=https://drive.google.com/uc?id={file['id']}&export=download"
                             }
                         )
         # if len(data) == 0:

@@ -1,10 +1,10 @@
 import os
 
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "bot_token")
-API_ID = int(os.environ.get("API_ID", 12345678))
-API_HASH = os.environ.get("API_HASH", "hash")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "5266741503:AAH17F9W4MAZnqq6TPGqzKg4v43LZpQPYyo")
+API_ID = int(os.environ.get("API_ID", 5026910))
+API_HASH = os.environ.get("API_HASH", "16d35ae89273082f96d6e87013a5a260")
 RESULTS_COUNT = int(os.environ.get("RESULTS_COUNT", 4))  # NOTE Number of results to show, 4 is better
-SUDO_CHATS_ID = list(set(int(x) for x in os.environ.get("SUDO_CHATS_ID", "-1001485393652 -1005456463651").split()))
-DRIVE_NAME = list(set(x for x in os.environ.get("DRIVE_NAME", "Root,Cartoon,Course,Movies,Series,Others").split(",")))
-DRIVE_ID = list(set(x for x in os.environ.get("DRIVE_ID", "1B9A3QqQqF31IuW2om3Qhr-wkiVLloxw8 12wNJTjNnR-CNBOTnLHqe-1vqFvCRLecn").split()))
-INDEX_URL = list(set(x for x in os.environ.get("INDEX_URL", "https://dl.null.tech/0: https://dl.null.tech/0:/Cartoon").split()))
+SUDO_CHATS_ID = list(set(int(x) for x in os.environ.get("SUDO_CHATS_ID", "-1001791208631").split()))
+DRIVE_NAME = list(set(x for x in os.environ.get("DRIVE_NAME", "Root").split(",")))
+DRIVE_ID = list(set(x for x in os.environ.get("DRIVE_ID", "0AEtL-TilLpk8Uk9PVA").split()))
+INDEX_URL = list(set(x for x in os.environ.get("INDEX_URL", "https://www1.thopdb.com/0:/").split()))

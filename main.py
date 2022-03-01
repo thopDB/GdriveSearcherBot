@@ -26,11 +26,11 @@ async def help_command(_, message):
     await message.reply_text("/gsearch [Query]")
 
 
-@app.on_message(filters.command("search") & ~filters.edited & filters.chat(SUDO_CHATS_ID))
-async def search(_, message: Message):
+@app.on_message(filters.command("gsearch") & ~filters.edited & filters.chat(SUDO_CHATS_ID))
+async def gsearch(_, message: Message):
     global i, m, data, user_id
     if len(message.command) < 2:
-        await message.reply_text('/seach Filename')
+        await message.reply_text('/gsearch Filename')
         return
     query = message.text.split(' ',maxsplit=1)[1]
     m = await message.reply_text("**Searching....**")

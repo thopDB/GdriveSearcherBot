@@ -7,4 +7,4 @@ RESULTS_COUNT = int(os.environ.get("RESULTS_COUNT", 4))  # NOTE Number of result
 SUDO_CHATS_ID = list(set(int(x) for x in os.environ.get("SUDO_CHATS_ID", "-1001791208631 -1001475773645").split()))
 DRIVE_NAME = list(set(x for x in os.environ.get("DRIVE_NAME", "Server-1,Server-2").split(",")))
 DRIVE_ID = list(set(x for x in os.environ.get("DRIVE_ID", "1a-3JH0YimjBcrTEDPy3ZdrXm2vhKFREU 1O21xupr3T1Mp7krMpzgudz80FXvbrN9H").split()))
-INDEX_URL = list(set(x for x in os.environ.get("INDEX_URL", "https://www1.thopdb.com/0:/Server-1/ https://www1.thopdb.com/0:/Server-2/").split()))
+INDEX_URL = list(set(x for x in os.environ.get("INDEX_URL", "https://www1.thopdb.com/0:/Server-1 https://www1.thopdb.com/0:/Server-2").split()))
